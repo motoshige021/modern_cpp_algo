@@ -57,7 +57,7 @@ int main(void) {
     std::string buf;
     std::cout << "Input month ";
     std::cin >> buf;
-    month = check_nubmer(buf, 12);
+    month = check_nubmer(buf, month_maxday.size());
     if (month < 0) {
         std::cout << "Error Invalid number: " << buf << '\n';
         return -1;
